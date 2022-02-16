@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-book fa-6x"></i>
+    <h1 class="display-3">Upload your book here</h1>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+
+        <input name="secret" type=file oninput="pic.src=window.URL.createObjectURL(this.files[0])">
+        <img id="pic"  width="100px" height="100px"/>
+
+      </div>
+      
+      <input type="submit" class="btn btn-dark"></input>
+    </form>
+
+    
+
+  </div>
+  
+
+</div>
+
+</div>
+
+  
+
+  </div>
+</div>
+<%- include('partials/footer') %>
